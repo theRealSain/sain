@@ -55,6 +55,7 @@ html {
 /* Font styling */
 body {
     font-family: 'Kanit', sans-serif;
+    background-color: #000006 !important;
 }
 
 h1, h2, h3 {

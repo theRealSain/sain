@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar fixed top-0 w-full py-4 z-50 flex items-center justify-between px-8 b bg-opacity-90 backdrop-blur-xl">
+    <nav
+        class="navbar fixed top-0 w-full py-4 z-50 flex items-center justify-between px-8 b bg-opacity-90 backdrop-blur-xl">
         <!-- Branding -->
         <div class="flex items-center">
             <a href="#home" class="text-white font-bold text-lg">Sain Saburaj</a>
@@ -30,6 +31,7 @@
             <a href="#home" class="text-white nav-link" data-link="home">Home</a>
             <a href="#about" class="text-white nav-link" data-link="about">About</a>
             <a href="#information" class="text-white nav-link" data-link="information">Information</a>
+            <a href="#skills" class="text-white nav-link" data-link="skills">Skills</a>
             <a href="#works" class="text-white nav-link" data-link="works">Works</a>
             <a href="#contact" class="text-white nav-link" data-link="contact">Contact</a>
         </div>
@@ -37,7 +39,6 @@
         <button id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></button>
     </nav>
     
-    <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
         <button id="closeSidebar" class="close-sidebar">
             <i class="fa-solid fa-xmark"></i>
@@ -46,15 +47,11 @@
             <li><a href="#home" class="block py-2 text-white nav-link" data-link="home">Home</a></li>
             <li><a href="#about" class="block py-2 text-white nav-link" data-link="about">About</a></li>
             <li><a href="#information" class="block py-2 text-white nav-link" data-link="information">Information</a></li>
+            <li><a href="#skills" class="block py-2 text-white nav-link" data-link="skills">Skills</a></li>
             <li><a href="#works" class="block py-2 text-white nav-link" data-link="works">Works</a></li>
             <li><a href="#contact" class="block py-2 text-white nav-link" data-link="contact">Contact</a></li>
         </ul>
     </div>
-
-    <script>
-        
-
-    </script>
 
 
     <!-- Home Section -->
@@ -143,16 +140,15 @@
 
 
     <!-- Information Section -->
-    <section id="information" class="bg-gray-500 text-white py-10 px-8">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-start gap-6">
-    
-            <!-- Work Experience Card (Left Side) -->
-            <div class="md:col-span-1 flex justify-end pr-8">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col h-[800px] w-full">
-                    <h2 class="text-4xl font-bold mb-6">Work Experience</h2>
-                    <div class="space-y-6 flex-grow">
+    <section id="information" class="bg-gray-500 text-white py-40 px-5">
+        <div class="container mx-auto">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col md:flex-row gap-8">
+                <!-- Work Experience -->
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-6">Work Experience</h2>
+                    <div class="space-y-6">
                         <!-- Work Experience Card 1 -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Web Developer</h3>
                             <p class="text-gray-300">STECH Web Studios | Sept 2024 - Present</p>
                             <p class="text-gray-400 mt-2 leading-relaxed">
@@ -161,7 +157,7 @@
                             </p>
                         </div>
                         <!-- Work Experience Card 2 -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Academic Projects</h3>
                             <p class="text-gray-300">Academic Projects | 2020 - 2023</p>
                             <p class="text-gray-400 mt-2 leading-relaxed">
@@ -170,7 +166,7 @@
                             </p>
                         </div>
                         <!-- Internship Work Experience -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Internship - Full Stack Development</h3>
                             <p class="text-gray-300">Internship | 25 Hours</p>
                             <p class="text-gray-400 mt-2 leading-relaxed">
@@ -180,64 +176,247 @@
                         </div>
                     </div>
                 </div>
-            </div>
     
-            <!-- Vertical Line -->
-            <div class="hidden md:block w-px bg-gray-400 mx-auto h-full"></div>
-    
-            <!-- Education Card (Right Side) -->
-            <div class="md:col-span-1 flex justify-start pl-8">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col h-[800px] w-full">
-                    <h2 class="text-4xl font-bold mb-6">Education</h2>
-                    <div class="space-y-6 flex-grow">
+                <!-- Education -->
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-6">Education</h2>
+                    <div class="space-y-6">
                         <!-- Education Card 1 -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Master of Computer Applications</h3>
                             <p class="text-gray-300">De Paul Institute of Science and Technology, Angamaly</p>
                             <p class="text-gray-300">Affiliated to Mahatma Gandhi University</p>
-                            <p class="text-gray-400">2019 - 2021</p>
+                            <p class="text-gray-400">2023 - 2025</p>
                         </div>
                         <!-- Education Card 2 -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Bachelor of Science in Computer Science</h3>
                             <p class="text-gray-300">St. Thomas College Autonomous, Thrissur</p>
                             <p class="text-gray-300">Affiliated to Calicut University</p>
-                            <p class="text-gray-400">2016 - 2019</p>
+                            <p class="text-gray-400">2020 - 2023</p>
                         </div>
                         <!-- Education Card 3 -->
-                        <div class="bg-gray-900 p-6 rounded-lg mb-6">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Higher Secondary Education - Science Computer
                             </h3>
                             <p class="text-gray-300">St. Aloysius HSS Elthuruth, Thrissur</p>
-                            <p class="text-gray-400">2014 - 2016</p>
+                            <p class="text-gray-400">2018 - 2020</p>
                         </div>
                         <!-- Education Card 4 -->
-                        <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="p-4 rounded-lg">
                             <h3 class="text-xl font-semibold text-indigo-400">Secondary Education</h3>
                             <p class="text-gray-300">Don Bosco HSS Mannuthy, Thrissur</p>
-                            <p class="text-gray-400">2012 - 2014</p>
+                            <p class="text-gray-400">2017 - 2018</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="bg-gray-900 text-white py-40 px-5 sm:px-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center">
+            <!-- Left Side: Heading and Description -->
+            <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+                <h2 class="text-5xl font-bold mb-4">Skills</h2>
+                <p class="text-lg text-gray-300">I have developed a diverse set of skills, ranging from front-end
+                    development to backend systems, ensuring seamless and efficient application performance.</p>
+            </div>
     
+            <!-- Right Side: Skill Listing -->
+            <div class="w-full lg:w-4/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-react text-3xl text-blue-400 mr-4"></i>
+                    <span class="text-lg font-semibold">ReactJS</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fas fa-code text-3xl text-pink-500 mr-4"></i>
+                    <span class="text-lg font-semibold">Tailwind CSS</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-js-square text-3xl text-yellow-500 mr-4"></i>
+                    <span class="text-lg font-semibold">JavaScript</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-css3-alt text-3xl text-blue-500 mr-4"></i>
+                    <span class="text-lg font-semibold">CSS3</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-php text-3xl text-purple-500 mr-4"></i>
+                    <span class="text-lg font-semibold">PHP</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fas fa-database text-3xl text-indigo-500 mr-4"></i>
+                    <span class="text-lg font-semibold">MySQL</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-python text-3xl text-green-500 mr-4"></i>
+                    <span class="text-lg font-semibold">Python</span>
+                </div>
+                <div class="flex items-center bg-gray-800 p-4 rounded-lg shadow-md">
+                    <i class="fab fa-html5 text-3xl text-orange-500 mr-4"></i>
+                    <span class="text-lg font-semibold">HTML5</span>
+                </div>                
+            </div>
         </div>
     </section>
 
 
 
-
-
-
-    <!-- Works Section -->
-    <section id="works" class="h-screen flex items-center justify-center bg-gray-100 text-black px-8">
-        <h2 class="text-4xl font-bold">Works</h2>
+    <section id="works" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-8">Works</h2>
+            <p class="text-center text-white-600 mb-12">Explore our recent projects and the work we've done for our amazing
+                clients.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 1" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 1</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 2" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 2</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 3" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 3</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 4" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 4</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 5" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 5</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-gray-900 shadow-lg rounded-lg overflow-hidden p-6">
+                    <div class="aspect-w-2 aspect-h-1">
+                        <img src="https://via.placeholder.com/400x200" alt="Work 6" class="rounded-lg object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">Project Title 6</h3>
+                        <p class="text-gray-400">A brief description of the project goes here, highlighting the main
+                            features and outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="h-screen flex items-center justify-center bg-gray-800 text-white px-8">
-        <h2 class="text-4xl font-bold">Contact</h2>
+
+    <section id="contact" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Main Heading -->
+            <h2 class="text-5xl font-extrabold text-center text-white mb-8">Contact Me</h2>
+    
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Left Side: Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-white">Contact Info</h3>
+                    <p class="text-lg text-gray-400 mt-2 mb-6">
+                        Feel free to reach out to me through the details below. I’m always open to discussing new projects,
+                        creative ideas, or opportunities.
+                    </p>
+    
+                    <!-- Email -->
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-gray-100">Email</h4>
+                        <p class="text-gray-400">
+                            <a href="mailto:sainsaburajpnc@gmail.com" class="text-gray-400 hover:text-gray-300 transition duration-300">sainsaburajpnc@gmail.com</a>
+                        </p>
+                    </div>
+    
+                    <!-- Phone -->
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-gray-100">Phone</h4>
+                        <p class="text-gray-400">
+                            <a href="tel:+918089526061" class="text-gray-400 hover:text-gray-300 transition duration-300">+91 8089526061</a>
+                        </p>
+                    </div>
+    
+                    <!-- Address -->
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-gray-100">Address</h4>
+                        <p class="text-gray-400">Thrissur, Kerala, India</p>
+                    </div>
+    
+                    <!-- Social Media Links -->
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold text-gray-100">Connect with Me</h4>
+                        <div class="flex items-center gap-6 mt-4">
+                            <a href="https://github.com/theRealSain" target="_blank"
+                                class="text-gray-200 hover:text-gray-300 transition duration-300">
+                                <i class="fab fa-github text-2xl"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/sain-saburaj-813191298" target="_blank"
+                                class="text-gray-200 hover:text-gray-300 transition duration-300">
+                                <i class="fab fa-linkedin text-2xl"></i> LinkedIn
+                            </a>
+                            <a href="https://instagram.com/_.sain.__" target="_blank"
+                                class="text-gray-200 hover:text-gray-300 transition duration-300">
+                                <i class="fab fa-instagram text-2xl"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Side: Contact Form (Optional) -->
+                <div class="bg-gray-900 p-6 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Send a Message</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full p-3 mb-4 rounded-md bg-gray-800 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full p-3 mb-4 rounded-md bg-gray-800 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <textarea name="message" placeholder="Your Message" rows="4"
+                            class="w-full p-3 mb-4 rounded-md bg-gray-800 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <button type="submit"
+                            class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+
+
 
     <script src="script.js"></script>
 </body>
